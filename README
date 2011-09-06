@@ -1,0 +1,10 @@
+MexicoLate
+
+Es mi primer App en python montada sobre el Google App Engine
+
+
+Busca en twitter cada al menos 15 minutos y las guarda en el contenedor de datos del App engine y los muestra en pantalla.
+
+
+
+
