@@ -1,0 +1,13 @@
+application: mexicolate
+version: 1
+runtime: python
+api_version: 1
+
+
+handlers:
+- url: /css
+  static_dir: template
+    
+- url: /.*
+  script: main.py
+  

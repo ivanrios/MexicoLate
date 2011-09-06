@@ -1,0 +1,172 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{text-decoration:none;}
+body{ background:#E6E6DC;font:1em/1.4 "lucida grande",tahoma,verdana,arial,sans-serif}
+body > div {margin:auto;}
+#cabecera {height:40px; background:#00628B;}
+#cabecera #logo {color:#E6E6DC; font-size:20px; padding:6px; float:left;}
+#cabecera #logo h1 { float:left;}
+#cabecera #logo img { float:left;margin-left: 7px;   margin-top: -9px;}
+#contenido {width:90%;min-height:400px;padding-top: 15px;}
+#pie {bottom:0px; height:37px;background:#00628B;margin-top: 10px;}
+#pie p{padding-top:10px; color:#E6E6DC; width:100% ;margin:auto; text-align:center; font-size:12px;}
+#pie p a{ color:#E6E6DC; }
+#mensajes{display:none;}
+#MensajeActual{font-size:28px;}
+#MensajesProcesados { font-size:11px;}
+#MensajesProcesados p{ display:inline; margin-left:10px;}
+#MensajesProcesados span{ font-weight:bold;display:inline}
+#MensajesProcesados img{ width:16px; margin-right:5px; float:left}
+#MensajeActual img{ width:25px;float: left;    margin-right: 10px;}
+#menu {float:right; margin-right: 50px;   margin-top: 13px;; font-size:11px;  }
+#cabecera a{color:#E6E6DC;  text-decoration:none;}
+.textoNormal {font-size:12px; margin-top:10px;}
+
+#MensajeActual blockquote{
+	-moz-border-radius: 20px 20px 20px 20px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 10px solid #00628B;
+	color: #333333;
+	margin: auto;
+	padding: 15px 15px;
+	position: relative;
+	text-align: left;
+}
+
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+#MensajeActual blockquote+ p {margin:15px 0 10px 85px; font-style:italic;}
+
+/* creates the triangle */
+#MensajeActual blockquote:after {
+	content:"";
+	position:absolute;
+	bottom:-50px;
+	left:50px;
+	border-width:0 20px 50px 0px;
+	border-style:solid;
+	border-color:transparent #00628B;
+	/* reduce the damage in FF3.0 */
+	display:block; 
+	width:0;
+}
+
+
+
+.mensajeado{
+	-moz-border-radius: 10px 10px 10px 10px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 2px solid #81A594;
+	color: #333333;
+	margin: 10px 0 3px 0;
+	padding: 5px;
+	position: relative;}
+
+	#share {	float: left;
+		margin-left: 30px;
+		margin-top: 20px;}
+		#Recargar a { color:#00628B}
+		#Recargar  {
+			display: none;
+			background-color: rgba(19, 168, 191, 0.1);
+			border-bottom-color: rgba(19, 168, 191, 0.15);
+			border-left-color-ltr-source: physical;
+			border-left-color-rtl-source: physical;
+			border-left-color-value: rgba(19, 168, 191, 0.15);
+			border-right-color-ltr-source: physical;
+			border-right-color-rtl-source: physical;
+			border-right-color-value: rgba(19, 168, 191, 0.15);
+			border-top-color: rgba(19, 168, 191, 0.15);
+			-moz-background-clip: border;
+			-moz-background-origin: padding;
+			-moz-background-size: auto auto;
+			-moz-border-radius-bottomleft: 3px;
+			-moz-border-radius-bottomright: 3px;
+			-moz-border-radius-topleft: 3px;
+			-moz-border-radius-topright: 3px;
+			background-attachment: scroll;
+			background-image: none;
+			background-position: 0 0;
+			background-repeat: repeat;
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			border-left-style-ltr-source: physical;
+			border-left-style-rtl-source: physical;
+			border-left-style-value: solid;
+			border-left-width-ltr-source: physical;
+			border-left-width-rtl-source: physical;
+			border-left-width-value: 1px;
+			border-right-style-ltr-source: physical;
+			border-right-style-rtl-source: physical;
+			border-right-style-value: solid;
+			border-right-width-ltr-source: physical;
+			border-right-width-rtl-source: physical;
+			border-right-width-value: 1px;
+			border-top-style: solid;
+			border-top-width: 1px;
+			cursor: pointer;
+			font-size: 13px;
+			margin-bottom: 10px;
+			margin-left: 15px;
+			margin-right: 15px;
+			margin-top: 10px;
+			padding-bottom: 5px;
+			padding-left: 1px;
+			padding-right: 1px;
+			padding-top: 5px;
+			text-align: center;
+			text-shadow: 0 1px 0 #FFFFFF;
+			z-index: 2;
+		}
+
+
+		#Facebook {float:left;margin:20px; margin-left:50px;}
+		#SocialMedia {min-height:255px; border-top:1px solid #81A594; margin:auto; margin-top:10px;}
+		#SocialMedia h1{color:##333333; margin-left:20px; margin-top:10px;}
+		#ContenedoeSM {width:990px; margin:auto; overflow:hidden;} 
+		#Bienvenido {background: none repeat scroll 0 0 #81A594;
+	    border: 1px solid #CCCCCC;
+	    color: #FFFFFF;
+	    margin: auto auto 15px;
+	    padding: 10px;
+	    text-align: center;}
+		#ElContador {font-size:50px;}

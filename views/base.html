@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es" dir="ltr">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="keywords" lang="es" content="Latidos de M&eacute;xico"/>
+	<meta name="description" content="Latidos de M&eacute;xico"/>
+	<link rel="stylesheet" href="css/estilo.css" type="text/css" media="screen, projection" />
+	<title>Latidos de M&eacute;xico</title>
+	<meta property="og:image" content="http://mexicolate.appspot.com/css/imagenes/mexico-late.jpg"/> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<link rel="image_src" href="http://mexicolate.appspot.com/css/imagenes/mexico-late.jpg" />
+	<link rel="shortcut icon" href="css/imagenes/favicon.ico" />
+	<script src="css/scripts/jticker.js"></script>
+</head>
+<body>
+	<div id="cabecera">
+		{% block header %}
+		{{  head }}
+		{% endblock %}
+	</div>
+	<div id="contenido">
+		{% block content %}Contenido
+		{% endblock %}
+	</div>
+	{{  footer }}
+</body>
+</html>

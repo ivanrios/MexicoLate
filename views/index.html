@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+
+<script src="css/scripts/scripts.js"></script>
+<div id="Bienvenido">
+	<p>¿Tienes idea de la cantidad mensajes positivos que se generan a cada minuto acerca de nuestro México?</p>
+	<p id="ContenedorContador">
+	  <span id="ElContador"></span>
+	</p>
+</div>
+<div id="Recargar">
+	<a href="/">Recargar</a>
+</div>
+<div id="MensajeActual">
+</div>
+<div id="mensajes">
+	{% for twitt in res %} 
+	<div class="twitt">
+		<div>
+			<p>{{ twitt.mensaje }}</p> 
+			<span>@{{ twitt.usuario }} </span>
+			<p>{{ twitt.foto }}</p> 
+		</div>
+	</div>
+	{% endfor %}
+</div>
+<div id="MensajesProcesados">
+</div>
+
+{% endblock %}
